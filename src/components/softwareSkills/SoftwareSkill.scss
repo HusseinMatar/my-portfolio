@@ -5,8 +5,14 @@
   list-style: none;
   font-size: 3rem;
   margin-bottom: 0px;
-  margin-top: 0px;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); // ✅ 4 icons per row
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 20px;
 }
 
 .software-skill-inline {
@@ -28,4 +34,10 @@
 }
 .software-skill-inline > i:hover ~ p {
   color: $skillsColor;
+}
+
+@media (max-width: 768px) {
+  .dev-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

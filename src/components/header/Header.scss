@@ -25,6 +25,9 @@
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header ul {
@@ -178,5 +181,52 @@
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;
+  }
+}
+.logo {
+  flex-shrink: 0;
+}
+.logo img {
+  height: auto;
+  width: 130px; // Try even 250px
+  max-width: 100%;
+  object-fit: contain;
+  margin-right: 16px;
+  filter: brightness(10);
+
+}
+.header {
+  display: flex;
+  justify-content: space-between; /* or 'start' */
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  margin-right: auto; /* ✅ pushes it to the far left */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+  .logo-name {
+    font-family: 'YourFancyFont', cursive;
+    font-size: 2rem;
+    margin-top: 1rem;
+    white-space: nowrap;
+  }
+
+  .grey-color {
+    color: #999;
+    font-size: 1.2rem;
+  }
+
+
+@media (max-width: 768px) {
+  .logo {
+    .logo-name {
+      font-size: 1.5rem;
+    }
   }
 }

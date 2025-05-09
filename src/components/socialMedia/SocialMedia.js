@@ -34,7 +34,7 @@ export default function socialMedia() {
 
       {socialMediaLinks.gmail ? (
         <a
-          href={`mailto:${socialMediaLinks.gmail}`}
+          href={`mailto:${socialMediaLinks.gmail}`} // ✅ YES mailto here
           className="icon-button google"
           target="_blank"
           rel="noopener noreferrer"
@@ -42,6 +42,7 @@ export default function socialMedia() {
           <i className="fas fa-envelope"></i>
           <span></span>
         </a>
+
       ) : null}
 
       {socialMediaLinks.gitlab ? (

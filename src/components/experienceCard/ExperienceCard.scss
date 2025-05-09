@@ -1,156 +1,153 @@
 @import "../../_globalColor";
 
-.experience-card {
-  position: relative;
-  background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  border-radius: 10px;
-  border: 1px solid $lightBorder1;
-}
-
+.experience-card,
 .experience-card-dark {
   position: relative;
-  background-color: $darkBackground;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
-}
+  background-color: $lightBackground2;
+  box-shadow: $lightBoxShadowDark 0px 10px 20px -15px;
+  margin-top: 1rem;
 
-.experience-card:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  &.experience-card-dark {
+    background-color: $darkBackground;
+  }
+
+  &:hover {
+    box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  }
 }
 
 .experience-banner {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 150%;
-  background: $experienceCardBannerLG;
-  border-radius: 10px 10px 0px 0px;
-  -webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -o-filter: blur(0px);
-  -ms-filter: blur(0px);
-  filter: blur(0px);
-  height: 11rem;
+  height: 9rem; // reduced from 11rem
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  background: $experienceCardBannerLG;
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
 }
 
 .experience-blurred_div {
   position: absolute;
-  background: $experienceCardBlurredDivLG;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  height: 11rem;
+  height: 8rem; // match banner height
   top: 0;
   left: 0;
   width: 100%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
+  background: $experienceCardBlurredDivLG;
+  filter: blur(5px);
 }
 
 .experience-div-company {
   position: absolute;
-  background: transparent;
-  height: 9rem;
+  height: 6.5rem;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: transparent;
 }
 
 .experience-text-company {
-  text-align: center;
-  padding: 1.5rem;
-  margin: 0;
   color: $lightBackground1;
-  font-size: 25px;
-  text-align: center;
+  font-size: 22px;
   font-weight: 700;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .experience-roundedimg {
+  width: 70px;
+  height: 70px;
   position: absolute;
-  object-fit: cover;
-  left: 0;
-  right: 0;
-  top: 7rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 8rem;
-  height: 8rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  top: 6rem; // match new banner height
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: contain;
+  background-color: white;
+  padding: 5px;
   border-radius: 50%;
-}
-
-.experience-text-role {
-  text-align: center;
-  color: $textColor;
-  font-weight: 700;
-  font-size: 25px;
-  margin: 0px;
-  padding-top: 1.5rem;
-  line-height: normal;
-}
-.dark-mode-text {
-  color: $textColorDark !important;
-}
-.experience-text-date {
-  text-align: center;
-  color: $textColor;
-  font-size: 20px;
-  margin: 0px;
-  padding-top: 1rem;
-  font-weight: 600;
-}
-
-.experience-text-desc {
-  text-align: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
 
 .experience-text-details {
-  padding: 1.5rem;
-  margin-top: 2rem;
+  padding: 1rem;
+  margin-top: 1.2rem;
+  text-align: center;
 }
 
-/* Media Query */
+.experience-text-role {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0.5rem 0 0;
+  color: $textColor;
+  line-height: 1.2;
 
+  &.dark-mode-text {
+    color: $textColorDark;
+  }
+}
+
+.experience-text-date {
+  font-size: 16px;
+  font-weight: 600;
+  color: $textColor;
+  margin: 0.5rem 0;
+
+  &.dark-mode-text {
+    color: $textColorDark;
+  }
+}
+
+.experience-text-desc {
+  font-size: 15px;
+  color: $textColor;
+  margin-top: 0.5rem;
+}
+
+.dark-mode-text {
+  color: $textColorDark !important;
+}
+
+/* Media Queries */
 @media (max-width: 1380px) {
+  .experience-text-company,
   .experience-text-role {
-    padding-top: 0.5rem;
-    font-size: 22px;
+    font-size: 20px;
   }
-  .experience-text-company {
-    font-size: 22px;
-  }
+
   .experience-text-date {
-    font-size: 18px;
+    font-size: 15px;
   }
+
   .experience-roundedimg {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 60px;
+    height: 60px;
+    top: 5.5rem;
   }
 }
 
 @media (max-width: 768px) {
+  .experience-text-company,
   .experience-text-role {
-    font-size: 22px;
-  }
-  .experience-text-company {
-    font-size: 22px;
-  }
-  .experience-text-date {
     font-size: 18px;
   }
+
+  .experience-text-date,
   .experience-text-desc {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .experience-text-details {
+    padding: 0.8rem;
   }
 }
