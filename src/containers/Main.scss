@@ -1,0 +1,25 @@
+@import "../_globalColor";
+
+.dark-mode {
+  background-color: $darkBackground;
+  color: white;
+  transition: "0.1s";
+}
+
+body, html {
+  width: 100%;
+  overflow-x: hidden; // ⬅️ prevents horizontal scroll
+}
+
+/* Add to Main.scss or your global layout file */
+.section-container {
+  height: 100vh;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}

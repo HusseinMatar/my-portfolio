@@ -1,0 +1,150 @@
+@import "../../_globalColor";
+
+.education-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 6rem auto 4rem auto; // more margin-top
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.education-heading {
+  font-size: 56px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.education-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+/* === Base Card Style === */
+.education-card {
+  border-radius: 16px;
+  padding: 30px 25px;
+  background-color:#1e1e2f;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.education-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+/* === Hover Color Themes === */
+.education-card.unito:hover {
+  background-color: #a0031a;
+}
+
+.education-card.orbyta:hover {
+  background: linear-gradient(180deg, #0000a0, #01015e);
+}
+
+/* === Logo === */
+.education-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: white;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+/* === Texts === */
+.education-text-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.education-subheader {
+  font-size: 16px;
+  color: white;
+  opacity: 0.85;
+}
+
+.education-duration {
+  font-size: 14px;
+  margin-top: 4px;
+  opacity: 0.7;
+  color: white;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 1024px) {
+  .education-heading {
+    font-size: 42px;
+  }
+
+  .education-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education-logo {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-heading {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .education-card-container {
+    gap: 24px;
+  }
+
+  .education-title {
+    font-size: 20px;
+  }
+
+  .education-subheader {
+    font-size: 16px;
+  }
+
+  .education-card {
+    padding: 24px 16px;
+  }
+  .education-card.unito {
+    background-color: #a0031a; /* Unito red */
+  }
+
+  .education-card.orbyta {
+    background: linear-gradient(180deg, #0000a0, #01015e); /* Orbyta deep blue */
+  }
+}
+
+
+.dark-mode-text {
+  color: white;
+}
+
+.light-mode-text {
+  color: #1a1a1a;
+}

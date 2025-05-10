@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@500;700&display=swap');
+@import "../../_globalColor";
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.skills-heading {
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.project-subtitle {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: $subTitle;
+}
+
+.flip-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem 2rem;
+  justify-items: center;
+  align-items: start;
+  padding: 0 1.5rem;
+}
+
+.flip-card {
+  width: 100%;
+  max-width: 380px;
+  height: 260px;
+  background-color: transparent;
+  perspective: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  background-color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem;
+  backface-visibility: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+
+/* Neon violet on hover/press */
+.flip-card:hover .flip-card-front,
+.flip-card:hover .flip-card-back,
+.flip-card:active .flip-card-front,
+.flip-card:active .flip-card-back {
+  border: 1px solid #b266ff;
+  box-shadow: 0 0 12px #b266ff, 0 0 18px #b266ff;
+}
+
+.flip-card-front {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  line-height: 1.6; // 👈 Adds vertical spacing between lines
+  letter-spacing: 0.5px;
+}
+
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  padding: 1.8rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  background-color: #2E1A47;
+}
+
+.project-description {
+  font-size: 16.5px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 1.4rem;
+  color: #e4e4e4;
+  letter-spacing: 0.4px;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.project-button {
+  background-color: transparent;
+  border: 1px solid #c38bff;
+  color: #e3d9ff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.project-button:hover {
+  background-color: #b266ff;
+  color: white;
+  box-shadow: 0 0 10px #c38bff;
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 1024px) {
+  .flip-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .flip-card-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.dark-mode-text {
+  color: white;
+}
+
+.light-mode-text {
+  color: #1a1a1a;
+}
+
+.dark-mode-subtitle {
+  color: $subTitle;
+}
+
+.light-mode-subtitle {
+  color: #444444;
+}
