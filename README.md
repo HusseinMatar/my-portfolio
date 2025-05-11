@@ -2,7 +2,7 @@ Hussein Matar – Developer Portfolio ⚡️
 
 A clean, elegant, and fully responsive personal developer portfolio built with React, showcasing my projects, skills, and professional journey.
 
-🔗 Live Demo: husseinmatar.github.io/my-portfolio
+🔗 Live Demo: [husseinmatar.github.io/my-portfolio](https://husseinmatar.github.io/my-portfolio/)
 
 ✨ Key Features
 	•	Responsive layout and beautiful animations
