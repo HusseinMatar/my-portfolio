@@ -8,6 +8,9 @@
 
 .splash-animation-container {
   height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .splash-title-container {
@@ -20,4 +23,10 @@
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 20px;
+}
+
+.splash-logo {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
