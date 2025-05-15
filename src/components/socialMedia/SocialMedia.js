@@ -44,17 +44,6 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.gitlab ? (
-        <a
-          href={socialMediaLinks.gitlab}
-          className="icon-button gitlab"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-gitlab"></i>
-          <span></span>
-        </a>
-      ) : null}
 
       {socialMediaLinks.facebook ? (
         <a
@@ -68,29 +57,6 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.instagram ? (
-        <a
-          href={socialMediaLinks.instagram}
-          className="icon-button instagram"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-instagram"></i>
-          <span></span>
-        </a>
-      ) : null}
-
-      {socialMediaLinks.twitter ? (
-        <a
-          href={socialMediaLinks.twitter}
-          className="icon-button twitter"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-twitter"></i>
-          <span></span>
-        </a>
-      ) : null}
 
       {socialMediaLinks.whatsapp ? (
         <a
@@ -104,18 +70,6 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-
-      {socialMediaLinks.kaggle ? (
-        <a
-          href={socialMediaLinks.kaggle}
-          className="icon-button kaggle"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-kaggle"></i>
-          <span></span>
-        </a>
-      ) : null}
     </div>
   );
 }

@@ -37,7 +37,11 @@
 .button-greeting-div {
   display: flex;
   margin-top: 40px;
+  justify-content: center; /* 👈 Center the buttons horizontally */
+  margin-top: 40px;
+  gap: 15px; /* Optional: add spacing between the buttons */
 }
+
 .download-link-button {
   text-decoration: none;
 }
@@ -118,6 +122,20 @@
   .greeting-image-div {
     height: 256px;
   }
+
+  .button-greeting-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* spacing between buttons */
+  }
+  
+  .button-greeting-div .button,
+  .button-greeting-div .download-link-button {
+    padding: 10px 18px;
+    font-size: 13px;
+    width: fit-content;
+  }
+  
 }
 
 @media (max-width: 320px) {

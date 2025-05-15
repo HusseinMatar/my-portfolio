@@ -3,7 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh; /* use full viewport */
+  margin: 0;
+  padding: 0;
 }
 
 .splash-animation-container {
@@ -16,13 +18,18 @@
 .splash-title-container {
   font-size: 2.5rem;
   text-decoration: none;
+  text-align: center; /* Center the text */
+  width: 100%;        /* Make it full width */
 }
+
 .splash-title {
   font-family: "Agustina Regular", cursive;
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 20px;
+  text-align: center;
+
 }
 
 .splash-logo {

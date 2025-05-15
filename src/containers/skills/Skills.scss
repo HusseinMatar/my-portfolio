@@ -3,7 +3,7 @@
 .skills-main-div {
   display: flex;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .skills-main-div > * {
@@ -30,6 +30,8 @@
   gap: 30px;
   justify-items: center;
   margin-top: 40px;
+  overflow: visible;
+  flex-wrap: wrap;
 }
 
 .skill-icon {
@@ -70,34 +72,41 @@
 @media (max-width: 768px) {
   .skills-main-div {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .skills-text-div {
-    margin-left: 0;
-    margin: 20px;
-  }
-
-  .skills-heading {
-    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin: 1rem auto;
+    order: 1; // ✅ appear first
   }
 
   .skills-icons-container {
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  }
-
-  .skills-text {
-    font-size: 16px;
-  }
-
-  .skills-text-subtitle {
-    font-size: 16px;
-    text-align: center;
+    grid-template-columns: repeat(2, 1fr); // ✅ 2 icons per row
+    gap: 1.5rem;
+    padding: 0 1rem;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    order: 2; // ✅ appear second
   }
 
   .skills-image-div {
-    order: 2;
+    order: 3; // ✅ appear last
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .skill-icon {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
 

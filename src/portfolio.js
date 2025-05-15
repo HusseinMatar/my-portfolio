@@ -82,6 +82,14 @@ const bigProjects = {
   subtitle: "Personal projects showcasing my development skills",
   projects: [
     {
+    projectName: "BeeSharp 🐝⚡",
+    projectDesc: "A gamified quiz web app built with Angular & Firebase inspired by the hardworking bee.",
+    footerLink: [
+      { name: "GitHub", url: "https://github.com/HusseinMatar/BeeSharp" },
+      { name: "Live Demo", url: "https://beesharp-bbdce.web.app/" }
+    ]
+  },
+    {
       projectName: "FrecciaBus 🚌",
       projectDesc: "A full-featured Angular app to search, book, and download bus tickets across Italy. Includes Firebase Auth & PDF ticket export.",
       footerLink: [
@@ -143,7 +151,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Get in Touch 📬"),
   subtitle:
-    "I'm always open to new opportunities, collaborations, or simply exchanging ideas with like-minded developers.\nCurrently based in Italy 🇮🇹."
+    "I'm always open to new opportunities, collaborations, or simply exchanging ideas with like-minded developers.",
 };
 
 export {

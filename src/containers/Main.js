@@ -13,6 +13,7 @@ import { StyleProvider } from "../contexts/StyleContext";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import Contact from "./contact/Contact";
 import "./Main.scss";
+import SparkleCursor from "../components/sparkleCursor/SparkleCursor";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -38,6 +39,7 @@ const Main = () => {
           <SplashScreen />
         ) : (
           <>
+          <SparkleCursor />
             <Header />
             <Greeting />
             <Skills />

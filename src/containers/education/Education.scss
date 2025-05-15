@@ -114,30 +114,51 @@
   .education-heading {
     font-size: 32px;
     margin-bottom: 30px;
+    text-align: center;
   }
 
   .education-card-container {
     gap: 24px;
   }
 
+  .education-card {
+    padding: 20px 16px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; // 👈 NEW: center the text block
+  }
+
+  .education-logo {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 12px; // 👈 spacing between logo and text
+  }
+
   .education-title {
     font-size: 20px;
+    margin-bottom: 6px;
   }
 
   .education-subheader {
-    font-size: 16px;
+    font-size: 15px;
   }
 
-  .education-card {
-    padding: 24px 16px;
+  .education-duration {
+    font-size: 13px;
   }
+
   .education-card.unito {
-    background-color: #a0031a; /* Unito red */
+    background-color: #a0031a;
   }
 
   .education-card.orbyta {
-    background: linear-gradient(180deg, #0000a0, #01015e); /* Orbyta deep blue */
+    background: linear-gradient(180deg, #0000a0, #01015e);
   }
+.education-text-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center; // 👈 helps center all content consistently
+}
 }
 
 

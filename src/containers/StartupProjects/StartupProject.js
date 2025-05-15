@@ -26,6 +26,7 @@ export default function StartupProject() {
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <h3 className="project-front-title">{project.projectName}</h3>
+                  <span className="flip-hint-mobile">↻</span> 
                 </div>
                 <div className="flip-card-back">
                   <p className="project-description">{project.projectDesc}</p>
