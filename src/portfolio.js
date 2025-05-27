@@ -79,7 +79,7 @@ const educationInfo = {
 
 const bigProjects = {
   title: "Things I've Built",
-  subtitle: "Personal projects showcasing my development skills",
+  subtitle: "Personal projects showcasing my development skills since the beginning of my journey. They differ in complexity and technologies used, but all reflect my passion for coding and problem-solving.",
   projects: [
     {
     projectName: "BeeSharp 🐝⚡",
@@ -99,7 +99,7 @@ const bigProjects = {
     },
     {
       projectName: "Michelin Magic Drops 🌿",
-      projectDesc: "Sustainability-focused presentation site built for the Michelin Challenge using Reveal.js and custom scroll effects.",
+      projectDesc: "Sustainability-focused presentation site built for the Michelin Challenge.",
       footerLink: [
         { name: "GitHub", url: "https://github.com/HusseinMatar/MichelinMagicDrops" },
         { name: "Live Demo", url: "https://husseinmatar.github.io/MichelinMagicDrops/" }
@@ -115,7 +115,7 @@ const bigProjects = {
     },
     {
       projectName: "Magic Number Calculator🔢✨",
-      projectDesc: "An innovative green project built for the Michelin Challenge showcasing water reuse in tire manufacturing.",
+      projectDesc: "A simple and interactive Magic Number Calculator based on Numerology.",
       footerLink: [
         { name: "GitHub", url: "https://github.com/HusseinMatar/magic-number-calculator" },
         { name: "Live Demo", url: "https://husseinmatar.github.io/magic-number-calculator/" }
