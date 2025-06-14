@@ -82,7 +82,15 @@ const bigProjects = {
   subtitle: "Personal projects showcasing my development skills since the beginning of my journey. They differ in complexity and technologies used, but all reflect my passion for coding and problem-solving.",
   projects: [
     {
-    projectName: "BeeSharp 🐝⚡",
+  projectName: "OrbytaMemo 🧠",
+  projectDesc: "A cosmic-themed memory game featuring two mini-games: StellarMatch (card match) and AstroPuzzle (image puzzle).",
+  footerLink: [
+    { name: "GitHub", url: "https://github.com/HusseinMatar/OrbytaMemo" },
+    { name: "Live Demo", url: "https://orbytamemory.web.app/" }
+  ]
+},
+    {
+    projectName: "BeeSharp 🐝",
     projectDesc: "A gamified quiz web app built with Angular & Firebase inspired by the hardworking bee.",
     footerLink: [
       { name: "GitHub", url: "https://github.com/HusseinMatar/BeeSharp" },
@@ -114,7 +122,7 @@ const bigProjects = {
       ]
     },
     {
-      projectName: "Magic Number Calculator🔢✨",
+      projectName: "Your Magic Number Calculator 🔢",
       projectDesc: "A simple and interactive Magic Number Calculator based on Numerology.",
       footerLink: [
         { name: "GitHub", url: "https://github.com/HusseinMatar/magic-number-calculator" },
