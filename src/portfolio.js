@@ -83,7 +83,7 @@ const bigProjects = {
   projects: [
 {
   projectName: "Debugger Run 🐛",
-  projectDesc: "A retro-style infinite runner where you dodge bugs, warnings, and sneaky errors while leveling up as a fearless developer. Built with pure HTML, CSS, and JavaScript—no frameworks.",
+  projectDesc: "A retro-style infinite runner where you dodge bugs, warnings, and sneaky errors while leveling up as a fearless developer.",
   footerLink: [
     { name: "GitHub", url: "https://github.com/HusseinMatar/debugger-run" },
     { name: "Live Demo", url: "https://husseinmatar.github.io/debugger-run/" }
