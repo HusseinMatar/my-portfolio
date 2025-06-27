@@ -81,6 +81,14 @@ const bigProjects = {
   title: "Things I've Built",
   subtitle: "Personal projects showcasing my development skills since the beginning of my journey. They differ in complexity and technologies used, but all reflect my passion for coding and problem-solving.",
   projects: [
+{
+  projectName: "Debugger Run 🐛",
+  projectDesc: "A retro-style infinite runner where you dodge bugs, warnings, and sneaky errors while leveling up as a fearless developer. Built with pure HTML, CSS, and JavaScript—no frameworks.",
+  footerLink: [
+    { name: "GitHub", url: "https://github.com/HusseinMatar/debugger-run" },
+    { name: "Live Demo", url: "https://husseinmatar.github.io/debugger-run/" }
+  ]
+},
     {
   projectName: "OrbytaMemo 🧠",
   projectDesc: "A cosmic-themed memory game featuring two mini-games: StellarMatch (card match) and AstroPuzzle (image puzzle).",
