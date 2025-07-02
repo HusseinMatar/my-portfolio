@@ -81,6 +81,14 @@ const bigProjects = {
   title: "Things I've Built",
   subtitle: "Personal projects showcasing my development skills since the beginning of my journey. They differ in complexity and technologies used, but all reflect my passion for coding and problem-solving.",
   projects: [
+    {
+  projectName: "Run for Values 🎮",
+  projectDesc: "A vertical mini-game where you dodge falling trees and collect 5 core values to win.",
+  footerLink: [
+    { name: "GitHub", url: "https://github.com/HusseinMatar/run-for-values" },
+    { name: "Live Demo", url: "https://husseinmatar.github.io/run-for-values/" }
+  ]
+},
 {
   projectName: "Debugger Run 🐛",
   projectDesc: "A retro-style infinite runner where you dodge bugs, warnings, and sneaky errors while leveling up as a fearless developer.",
@@ -135,14 +143,6 @@ const bigProjects = {
       footerLink: [
         { name: "GitHub", url: "https://github.com/HusseinMatar/magic-number-calculator" },
         { name: "Live Demo", url: "https://husseinmatar.github.io/magic-number-calculator/" }
-      ]
-    },
-    {
-      projectName: "To-Do List Pomodoro ⏱️",
-      projectDesc: "A productivity app combining task management and Pomodoro Timer with responsive UI for both desktop and mobile.",
-      footerLink: [
-        { name: "GitHub", url: "https://github.com/HusseinMatar/toDoList-Pomodoro" },
-        { name: "Live Demo", url: "https://husseinmatar.github.io/toDoList-Pomodoro/" }
       ]
     },
     {
