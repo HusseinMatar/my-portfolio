@@ -82,6 +82,14 @@ const bigProjects = {
   subtitle: "Personal projects showcasing my development skills since the beginning of my journey. They differ in complexity and technologies used, but all reflect my passion for coding and problem-solving.",
   projects: [
     {
+  projectName: "Snake Game 🐍",
+  projectDesc: "A modern version of the classic Snake game with mobile controls, obstacles, and a timed super bonus that doubles your score and length.",
+  footerLink: [
+    { name: "GitHub", url: "https://github.com/HusseinMatar/snake" },
+    { name: "Live Demo", url: "https://husseinmatar.github.io/snake/" }
+  ]
+},
+    {
   projectName: "Run for Values 🎮",
   projectDesc: "A vertical mini-game where you dodge falling trees and collect 5 core values to win.",
   footerLink: [
