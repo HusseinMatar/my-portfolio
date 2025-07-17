@@ -83,7 +83,7 @@ const bigProjects = {
   projects: [
     {
   projectName: "RPS Battle ⚔️",
-  projectDesc: "A fast-paced Rock-Paper-Scissors game with countdown pressure, animated battles, and local match history. Choose quickly or lose by default!",
+  projectDesc: "A fast-paced Rock-Paper-Scissors game with countdown pressure, animated battles, and local match history.",
   footerLink: [
     { name: "GitHub", url: "https://github.com/HusseinMatar/RPS-Battle" },
     { name: "Live Demo", url: "https://husseinmatar.github.io/RPS-Battle/" }
