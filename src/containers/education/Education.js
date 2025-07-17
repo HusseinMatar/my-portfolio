@@ -16,11 +16,13 @@ export default function Education() {
       </h1>
       <div className="education-card-container">
       {educationInfo.schools.map((school, index) => {
-  const schoolClass = school.schoolName.includes("Orbyta")
-    ? "orbyta"
-    : school.schoolName.includes("Torino")
-    ? "unito"
-    : "";
+const schoolClass = school.schoolName.includes("BasicNet")
+  ? "basic"
+  : school.schoolName.includes("Orbyta")
+  ? "orbyta"
+  : school.schoolName.includes("Torino")
+  ? "unito"
+  : "";
 
   return (
     <Fade left duration={2300} distance="30px" key={index}>
