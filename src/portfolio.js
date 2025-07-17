@@ -59,6 +59,14 @@ const educationInfo = {
   display: true,
   schools: [
         {
+      schoolName: "BasicNet",
+      logo: require("./assets/images/basicnet_logo.jpeg"),
+      subHeader: "FrontEnd Shopify Developer",
+      duration: "July 2025 – Present",
+      desc: "",
+      descBullets: []
+    },
+        {
       schoolName: "Orbyta",
       logo: require("./assets/images/orbytaLogo.jpeg"),
       subHeader: "Web Developer",
@@ -71,14 +79,6 @@ const educationInfo = {
       logo: require("./assets/images/unitologo.jpeg"),
       subHeader: "Bachelor in Computer Science",
       duration: "",
-      desc: "",
-      descBullets: []
-    },
-        {
-      schoolName: "BasicNet",
-      logo: require("./assets/images/basicnet_logo.jpeg"),
-      subHeader: "FrontEnd Shopify Developer",
-      duration: "July 2025 – Present",
       desc: "",
       descBullets: []
     }

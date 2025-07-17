@@ -7,7 +7,7 @@
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  //align-items: center;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -54,6 +54,10 @@
 
 .education-card.orbyta:hover {
   background: linear-gradient(180deg, #0000a0, #01015e);
+}
+
+.education-card.basic:hover {
+  background: grey;
 }
 
 /* === Logo === */
