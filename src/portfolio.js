@@ -15,8 +15,8 @@ const greeting = {
   username: "Hussein Matar",
   title: "Hi all, I'm Hussein",
   subTitle: emoji(
-    "A passionate Front-End Developer with hands-on experience building modern, responsive web applications using HTML, CSS, JavaScript, TypeScript, Angular, and other exciting tools and frameworks."
-  ),
+    "A passionate Front-End Developer with hands-on experience building modern, responsive web applications using HTML, CSS, JavaScript, TypeScript, and Angular, as well as developing custom storefronts and features as a Shopify Frontend Developer using Liquid, metafields, and Shopify’s ecosystem."
+      ),
   resumeLink: "/HusseinMatarCV.pdf",
   displayGreeting: true
 };
