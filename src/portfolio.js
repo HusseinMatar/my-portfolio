@@ -82,6 +82,14 @@ const bigProjects = {
   subtitle: "Personal projects showcasing my development skills since the beginning of my journey. They differ in complexity and technologies used, but all reflect my passion for coding and problem-solving.",
   projects: [
     {
+  projectName: "RPS Battle ⚔️",
+  projectDesc: "A fast-paced Rock-Paper-Scissors game with countdown pressure, animated battles, and local match history. Choose quickly or lose by default!",
+  footerLink: [
+    { name: "GitHub", url: "https://github.com/HusseinMatar/RPS-Battle" },
+    { name: "Live Demo", url: "https://husseinmatar.github.io/RPS-Battle/" }
+  ]
+},
+    {
   projectName: "Snake Game 🐍",
   projectDesc: "A modern version of the classic Snake game with mobile controls, obstacles, and a timed super bonus that doubles your score and length.",
   footerLink: [
