@@ -157,7 +157,7 @@ const bigProjects = {
     },
         {
       projectName: "Snake Game 🐍",
-      projectDesc: "A modern version of the classic Snake game with mobile controls, obstacles, and a timed super bonus that doubles your score and length.",
+      projectDesc: "A version of the classic Snake game with mobile controls, obstacles, and a timed super bonus that doubles your score and length.",
       footerLink: [
         { name: "GitHub", url: "https://github.com/HusseinMatar/snake" },
         { name: "Live Demo", url: "https://husseinmatar.github.io/snake/" }

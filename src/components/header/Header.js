@@ -4,6 +4,7 @@ import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
 import { greeting } from "../../portfolio";
+import { useEffect, useState } from "react";
 
 function Header() {
   const { isDark } = useContext(StyleContext);
@@ -11,6 +12,32 @@ function Header() {
   const closeMenu = () => {
     document.getElementById("menu-btn").checked = false;
   };
+
+  const [activeSection, setActiveSection] = useState("#greeting");
+
+useEffect(() => {
+  const handleScroll = () => {
+    const sections = ["#greeting", "#skills", "#education", "#projects", "#contact"];
+    let current = "#greeting";
+
+    for (const id of sections) {
+      const el = document.querySelector(id);
+      if (el) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          current = id;
+          break;
+        }
+      }
+    }
+
+    setActiveSection(current);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll(); // initial trigger
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <Headroom>
@@ -31,19 +58,19 @@ function Header() {
         </label>
 
         <ul className={isDark ? "dark-menu menu" : "menu"}>
-          <li>
+          <li className={activeSection === "#greeting" ? "active" : ""}>
             <a href="#greeting" onClick={closeMenu}>Hello World</a>
           </li>
-          <li>
+          <li className={activeSection === "#skills" ? "active" : ""}>
             <a href="#skills" onClick={closeMenu}>Tech I use</a>
           </li>
-          <li>
+          <li className={activeSection === "#education" ? "active" : ""}>
             <a href="#education" onClick={closeMenu}>Where I'm growing?</a>
           </li>
-          <li>
+          <li className={activeSection === "#projects" ? "active" : ""}>
             <a href="#projects" onClick={closeMenu}>Things I've Built</a>
           </li>
-          <li>
+          <li className={activeSection === "#contact" ? "active" : ""}>
             <a href="#contact" onClick={closeMenu}>Let's Connect</a>
           </li>
           <li>

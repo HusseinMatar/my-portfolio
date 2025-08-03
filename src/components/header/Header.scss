@@ -201,3 +201,10 @@
     font-size: 1.6rem; // make sure it's not oversized
   }
 }
+
+.menu li.active a {
+  color: #a855f7; // your highlight color
+  font-weight: 600;
+  border-bottom: 2px solid #a855f7;
+  padding-bottom: 2px;
+}
