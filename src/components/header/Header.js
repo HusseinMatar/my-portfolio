@@ -40,7 +40,6 @@ useEffect(() => {
 }, []);
 
   return (
-    <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/my-portfolio/" className="logo">
           <span className="grey-color"> &lt;</span>
@@ -78,7 +77,6 @@ useEffect(() => {
           </li>
         </ul>
       </header>
-    </Headroom>
   );
 }
 
