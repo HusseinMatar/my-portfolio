@@ -90,8 +90,22 @@ const bigProjects = {
   title: "Things I've Built",
   subtitle: "Personal projects showcasing my development skills since the beginning of my journey. They differ in complexity and technologies used, but all reflect my passion for coding and problem-solving.",
   projects: [
-
+    {
+  projectName: "Mr. Coffee ☕",
+  projectDesc: "Bilingual single-page café website (English/Arabic) featuring a dynamic digital menu, smooth cart UX, and WhatsApp ordering integration.",
+  footerLink: [
+    { name: "Live Demo", url: "https://mr-coffee.web.app/" }
+  ]
+},
+    {
+  projectName: "Orbyta Foosball Cup 🏆",
+  projectDesc: "Realtime foosball tournament web app with Swiss qualifiers, live knockout bracket, Firebase Auth/Firestore sync, and balanced team generation (seed & Buchholz).",
+  footerLink: [
+    { name: "Live Demo", url: "https://orbyta-foosball.web.app/" }
+  ]
+},
 {
+  
   projectName: "Debugger Run 🐛",
   projectDesc: "A retro-style infinite runner where you dodge bugs, warnings, and sneaky errors while leveling up as a fearless developer.",
   footerLink: [
@@ -103,7 +117,6 @@ const bigProjects = {
   projectName: "OrbytaMemo 🧠",
   projectDesc: "A cosmic-themed memory game featuring two mini-games: StellarMatch (card match) and AstroPuzzle (image puzzle).",
   footerLink: [
-    { name: "GitHub", url: "https://github.com/HusseinMatar/OrbytaMemo" },
     { name: "Live Demo", url: "https://orbytamemory.web.app/" }
   ]
 },
@@ -111,7 +124,6 @@ const bigProjects = {
     projectName: "BeeSharp 🐝",
     projectDesc: "A gamified quiz web app built with Angular & Firebase inspired by the hardworking bee.",
     footerLink: [
-      { name: "GitHub", url: "https://github.com/HusseinMatar/BeeSharp" },
       { name: "Live Demo", url: "https://beesharp-bbdce.web.app/" }
     ]
   },
@@ -119,7 +131,6 @@ const bigProjects = {
       projectName: "FrecciaBus 🚌",
       projectDesc: "A full-featured Angular app to search, book, and download bus tickets across Italy. Includes Firebase Auth & PDF ticket export.",
       footerLink: [
-        { name: "GitHub", url: "https://github.com/HusseinMatar/FrecciaBus" },
         { name: "Live Demo", url: "https://busapp-d73ac.web.app/search" }
       ]
     },

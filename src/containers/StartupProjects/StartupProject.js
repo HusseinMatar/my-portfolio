@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import "./StartupProjects.scss";
 import { bigProjects } from "../../portfolio";
-import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
@@ -11,8 +10,7 @@ export default function StartupProject() {
 
   return (
     <div className="section-container" id="projects">
-    <Fade bottom duration={2000} distance="20px">
-      <div className="main" id="projects">
+      <div className="main">
       <h1 className={`skills-heading ${isDark ? "dark-mode-text" : "light-mode-text"}`}>
         {bigProjects.title}
       </h1>
@@ -49,7 +47,6 @@ export default function StartupProject() {
           ))}
         </div>
       </div>
-    </Fade>
     </div>
   );
 }
