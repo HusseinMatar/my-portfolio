@@ -91,6 +91,14 @@ const bigProjects = {
   subtitle: "Personal projects showcasing my development skills since the beginning of my journey. They differ in complexity and technologies used, but all reflect my passion for coding and problem-solving.",
   projects: [
     {
+    projectName: "Planet Live Dashboard 🌍",
+    projectDesc: "Interactive real-time monitoring dashboard built with React, TypeScript, Tailwind, and public APIs, featuring a 3D globe with live earthquakes, ISS tracking, global weather search, and near-Earth asteroid data.",
+    footerLink: [
+      { name: "Live Demo", url: "https://planet-live-dashboard.vercel.app/" },
+      { name: "GitHub", url: "https://github.com/HusseinMatar/planet-live-dashboard" }
+    ]
+  },
+    {
   projectName: "Mr. Coffee ☕",
   projectDesc: "Bilingual single-page café website (English/Arabic) featuring a dynamic digital menu, smooth cart UX, and WhatsApp ordering integration.",
   footerLink: [
