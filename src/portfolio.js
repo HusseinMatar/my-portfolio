@@ -58,31 +58,50 @@ const skillsSection = {
 const educationInfo = {
   display: true,
   schools: [
-        {
-      schoolName: "BasicNet",
-      logo: require("./assets/images/basicnet_logo.jpeg"),
-      subHeader: "FrontEnd Shopify Developer",
-      duration: "July 2025 – Present",
-      desc: "",
-      descBullets: []
-    },
-        {
-      schoolName: "Orbyta",
+    {
+      schoolName: "Orbyta Tech",
       logo: require("./assets/images/orbytaLogo.jpeg"),
-      subHeader: "Web Developer",
-      duration: "March 2025 – Present",
-      desc: "",
-      descBullets: []
+      subHeader: "IT Consultant – Angular",
+      duration: "April 2026 – Present",
+      desc: "Consultant at Almaviva S.p.A., contributing to the frontend development of an infrastructure monitoring web application.",
+      descBullets: [
+        "Develop responsive enterprise features using Angular, TypeScript, Angular Material, Plotly, HTML, and SCSS.",
+        "Support data-driven monitoring workflows based on predictive analysis of structural oscillations.",
+        "Collaborate with cross-functional teams to deliver scalable, maintainable, and user-focused solutions."
+      ]
     },
     {
-      schoolName: "Università degli Studi di Torino",
+      schoolName: "Orbyta Tech",
+      logo: require("./assets/images/orbytaLogo.jpeg"),
+      subHeader: "IT Consultant – Shopify",
+      duration: "July 2025 – March 2026",
+      desc: "Consultant at BasicNet S.p.A., combining Shopify frontend development with Product Information Management testing.",
+      descBullets: [
+        "Worked on e-commerce platforms for Kappa, K-Way, Sebago, and Superga.",
+        "Developed and maintained Shopify themes using Liquid, JavaScript, HTML, and CSS.",
+        "Validated product data, catalog structures, workflows, and import/export operations using tools such as Matrixify."
+      ]
+    },
+    {
+      schoolName: "Orbyta Tech",
+      logo: require("./assets/images/orbytaLogo.jpeg"),
+      subHeader: "Web Developer Intern",
+      duration: "March 2025 – July 2025",
+      desc: "Completed an accelerated internship focused on frontend development and production-ready web applications.",
+      descBullets: [
+        "Built projects using Angular, React, Shopify, and Firebase.",
+        "Developed responsive interfaces and reusable frontend components.",
+        "Strengthened problem-solving, autonomy, and client communication skills."
+      ]
+    },
+    {
+      schoolName: "University of Turin",
       logo: require("./assets/images/unitologo.jpeg"),
-      subHeader: "Bachelor in Computer Science",
-      duration: "",
-      desc: "",
+      subHeader: "Bachelor’s Degree in Computer Science",
+      duration: "In Progress",
+      desc: "Computer Science studies focused on software engineering, databases, algorithms, and modern application development.",
       descBullets: []
     }
-
   ]
 };
 
@@ -91,13 +110,13 @@ const bigProjects = {
   subtitle: "Personal projects showcasing my development skills since the beginning of my journey. They differ in complexity and technologies used, but all reflect my passion for coding and problem-solving.",
   projects: [
     {
-    projectName: "Planet Live Dashboard 🌍",
-    projectDesc: "Interactive real-time monitoring dashboard built with React, TypeScript, Tailwind, and public APIs, featuring a 3D globe with live earthquakes, ISS tracking, global weather search, and near-Earth asteroid data.",
-    footerLink: [
-      { name: "Live Demo", url: "https://planet-live-dashboard.vercel.app/" },
-      { name: "GitHub", url: "https://github.com/HusseinMatar/planet-live-dashboard" }
-    ]
-  },
+      projectName: "Planet Live Dashboard 🌍",
+      projectDesc: "Interactive real-time dashboard with a 3D globe showing earthquakes, ISS tracking, weather search, and near-Earth asteroid data.",
+      footerLink: [
+        { name: "Live Demo", url: "https://planet-live-dashboard.vercel.app/" },
+        { name: "GitHub", url: "https://github.com/HusseinMatar/planet-live-dashboard" }
+      ]
+    },
     {
   projectName: "Mr. Coffee ☕",
   projectDesc: "Bilingual single-page café website (English/Arabic) featuring a dynamic digital menu, smooth cart UX, and WhatsApp ordering integration.",
