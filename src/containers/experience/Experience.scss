@@ -1,0 +1,52 @@
+@import "../../_globalColor";
+
+.experience-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 6rem auto 4rem;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.experience-heading {
+  width: 100%;
+  margin: 0 0 60px;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+
+.experience-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.experience-cards-container > * {
+  min-width: 0;
+}
+
+@media (max-width: 1024px) {
+  .experience-heading {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    margin-top: 4rem;
+    padding: 0 20px;
+  }
+
+  .experience-heading {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+
+  .experience-cards-container {
+    grid-template-columns: 1fr;
+  }
+}

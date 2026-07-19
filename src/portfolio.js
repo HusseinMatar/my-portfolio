@@ -15,8 +15,8 @@ const greeting = {
   username: "Hussein Matar",
   title: "Hi all, I'm Hussein",
   subTitle: emoji(
-    "A passionate Front-End Developer with hands-on experience building modern, responsive web applications using HTML, CSS, JavaScript, TypeScript, and Angular, as well as developing custom storefronts and features as a Shopify Frontend Developer using Liquid, metafields, and Shopify’s ecosystem."
-      ),
+    "Software Developer at Orbyta, building Angular enterprise applications for Almaviva and Shopify e-commerce solutions for BasicNet, with a core stack of Angular, TypeScript, JavaScript, and modern frontend technologies."
+  ),
   resumeLink: "/HusseinMatarCV.pdf",
   displayGreeting: true
 };
@@ -55,14 +55,14 @@ const skillsSection = {
   display: true
 };
 
-const educationInfo = {
+const experienceInfo = {
   display: true,
-  schools: [
+  experience: [
     {
-      schoolName: "Orbyta Tech",
-      logo: require("./assets/images/orbytaLogo.jpeg"),
-      subHeader: "IT Consultant – Angular",
-      duration: "April 2026 – Present",
+      company: "Orbyta Tech",
+      companylogo: require("./assets/images/orbytaLogo.jpeg"),
+      role: "IT Consultant – Angular",
+      date: "April 2026 – Present",
       desc: "Consultant at Almaviva S.p.A., contributing to the frontend development of an infrastructure monitoring web application.",
       descBullets: [
         "Develop responsive enterprise features using Angular, TypeScript, Angular Material, Plotly, HTML, and SCSS.",
@@ -71,10 +71,10 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Orbyta Tech",
-      logo: require("./assets/images/orbytaLogo.jpeg"),
-      subHeader: "IT Consultant – Shopify",
-      duration: "July 2025 – March 2026",
+      company: "Orbyta Tech",
+      companylogo: require("./assets/images/orbytaLogo.jpeg"),
+      role: "IT Consultant – Shopify",
+      date: "July 2025 – March 2026",
       desc: "Consultant at BasicNet S.p.A., combining Shopify frontend development with Product Information Management testing.",
       descBullets: [
         "Worked on e-commerce platforms for Kappa, K-Way, Sebago, and Superga.",
@@ -83,22 +83,27 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Orbyta Tech",
-      logo: require("./assets/images/orbytaLogo.jpeg"),
-      subHeader: "Web Developer Intern",
-      duration: "March 2025 – July 2025",
+      company: "Orbyta Tech",
+      companylogo: require("./assets/images/orbytaLogo.jpeg"),
+      role: "Web Developer Intern",
+      date: "March 2025 – July 2025",
       desc: "Completed an accelerated internship focused on frontend development and production-ready web applications.",
       descBullets: [
         "Built projects using Angular, React, Shopify, and Firebase.",
         "Developed responsive interfaces and reusable frontend components.",
         "Strengthened problem-solving, autonomy, and client communication skills."
       ]
-    },
+    }
+  ]
+};
+
+const educationInfo = {
+  display: true,
+  schools: [
     {
       schoolName: "University of Turin",
       logo: require("./assets/images/unitologo.jpeg"),
       subHeader: "Bachelor’s Degree in Computer Science",
-      duration: "In Progress",
       desc: "Computer Science studies focused on software engineering, databases, algorithms, and modern application development.",
       descBullets: []
     }
@@ -240,6 +245,7 @@ export {
   socialMediaLinks,
   splashScreen,
   skillsSection,
+  experienceInfo,
   educationInfo,
   bigProjects,
   contactInfo,

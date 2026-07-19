@@ -5,6 +5,7 @@ import Skills from "./skills/Skills";
 import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import Education from "./education/Education";
+import Experience from "./experience/Experience";
 import Footer from "../components/footer/Footer";
 import ScrollToTopButton from "./topbutton/Top";
 import SplashScreen from "./splashScreen/SplashScreen";
@@ -43,6 +44,7 @@ const Main = () => {
             <Header />
             <Greeting />
             <Skills />
+            <Experience />
             <Education />
             <StartupProject />
             <Projects />

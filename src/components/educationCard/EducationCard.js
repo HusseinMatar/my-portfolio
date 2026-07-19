@@ -7,13 +7,11 @@ export default function EducationCard({school}) {
   const imgRef = createRef();
 
   const GetDescBullets = ({descBullets}) => {
-    return descBullets
-      ? descBullets.map((item, i) => (
-          <li key={i} className="subTitle">
-            {item}
-          </li>
-        ))
-      : null;
+    return descBullets.map((item, i) => (
+      <li key={i} className="subTitle">
+        {item}
+      </li>
+    ));
   };
   const {isDark} = useContext(StyleContext);
 
@@ -54,12 +52,16 @@ export default function EducationCard({school}) {
               >
                 {school.duration}
               </p>
-              <p className="education-text-desc">{school.desc}</p>
-              <div className="education-text-bullets">
-                <ul>
-                  <GetDescBullets descBullets={school.descBullets} />
-                </ul>
-              </div>
+              {school.desc && (
+                <p className="education-text-desc">{school.desc}</p>
+              )}
+              {school.descBullets && school.descBullets.length > 0 && (
+                <div className="education-text-bullets">
+                  <ul>
+                    <GetDescBullets descBullets={school.descBullets} />
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         </div>

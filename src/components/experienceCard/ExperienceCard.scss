@@ -114,11 +114,25 @@
 
 .experience-text-desc {
   text-align: center;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
 }
 
 .experience-text-details {
   padding: 1.5rem;
   margin-top: 2rem;
+  min-width: 0;
+}
+
+.experience-text-bullets {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+}
+
+.experience-text-bullets li + li {
+  margin-top: 0.5rem;
 }
 
 /* Media Query */

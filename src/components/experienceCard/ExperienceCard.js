@@ -18,16 +18,11 @@ export default function ExperienceCard({cardInfo, isDark}) {
   }
 
   const GetDescBullets = ({descBullets, isDark}) => {
-    return descBullets
-      ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
-      : null;
+    return descBullets.map((item, i) => (
+      <li key={i} className={isDark ? "subTitle dark-mode-text" : "subTitle"}>
+        {item}
+      </li>
+    ));
   };
 
   return (
@@ -66,18 +61,25 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.date}
         </h5>
-        <p
-          className={
-            isDark
-              ? "subTitle experience-text-desc dark-mode-text"
-              : "subTitle experience-text-desc"
-          }
-        >
-          {cardInfo.desc}
-        </p>
-        <ul>
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-        </ul>
+        {cardInfo.desc && (
+          <p
+            className={
+              isDark
+                ? "subTitle experience-text-desc dark-mode-text"
+                : "subTitle experience-text-desc"
+            }
+          >
+            {cardInfo.desc}
+          </p>
+        )}
+        {cardInfo.descBullets && cardInfo.descBullets.length > 0 && (
+          <ul className="experience-text-bullets">
+            <GetDescBullets
+              descBullets={cardInfo.descBullets}
+              isDark={isDark}
+            />
+          </ul>
+        )}
       </div>
     </div>
   );
