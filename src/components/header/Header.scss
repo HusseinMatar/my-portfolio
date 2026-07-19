@@ -1,204 +1,245 @@
 @import "../../_globalColor";
 
-/*React-headroom*/
 .headroom-wrapper {
   max-height: 100px;
 }
-
-/* header */
 
 .dark-menu {
   background-color: $darkBackground !important;
   color: $textColorDark;
 }
 
-.dark-menu li a {
-  color: $textColorDark !important;
-}
-
-.dark-menu li a:hover {
-  background-color: $buttonColor !important;
-}
-
 .header {
-  background-color: $lightBackground1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   max-width: 100%;
-  padding: 15px 20px;
-  margin: 0px auto;
-}
-
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
+  min-height: 72px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  background-color: $lightBackground1;
 }
 
 .grey-color {
   color: $subTitle;
 }
 
-.header li a {
-  display: block;
-  padding: 15px 20px;
-  color: $textColor;
-  text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: $headerHoverBG;
-}
-
 .header .logo {
   display: block;
-  flex: none;
-  float: left;
+  flex: 0 1 auto;
+  min-width: 0;
+  color: $textColor;
   font-size: 1.5em;
-  text-decoration: none;
-  margin-top: 10px;
   line-height: normal;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dark-menu .logo {
+  color: $textColorDark;
 }
 
 .header .logo-name {
+  padding: 0 10px;
   font-family: "Agustina Regular";
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
-  padding: 0 10px;
 }
 
-/* menu */
-
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
+.header-actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 14px;
+  margin-left: 16px;
 }
 
-/* menu icon */
+.header-theme-toggle {
+  display: flex;
+  align-items: center;
+  height: 44px;
+}
 
-.header .menu-icon {
+.header-theme-toggle .switch input:focus-visible + .slider {
+  outline: 3px solid $buttonColor;
+  outline-offset: 3px;
+}
+
+.menu-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  color: $textColor;
+  background: transparent;
   cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
 }
 
-.header .menu-icon .navicon {
-  background: $iconBackground;
+.dark-menu .menu-button {
+  color: $textColorDark;
+}
+
+.menu-button:hover {
+  background-color: $headerHoverBG;
+}
+
+.menu-button:focus-visible,
+.header .menu a:focus-visible,
+.header .logo:focus-visible {
+  outline: 3px solid $buttonColor;
+  outline-offset: 3px;
+}
+
+.navicon,
+.navicon::before,
+.navicon::after {
   display: block;
+  width: 22px;
   height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.navicon {
   position: relative;
-  transition: background 0.2s ease-out;
-  width: 18px;
 }
 
-.header .menu-icon .navicon-dark {
-  background: $textColorDark;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: $iconBackground;
-  content: "";
-  display: block;
-  height: 100%;
+.navicon::before,
+.navicon::after {
   position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon-dark:before,
-.header .menu-icon .navicon-dark:after {
-  background: $textColorDark !important;
+  left: 0;
   content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
 }
 
-.header .menu-icon .navicon:before {
-  top: 5px;
+.navicon::before {
+  transform: translateY(-7px);
 }
 
-.header .menu-icon .navicon:after {
-  top: -5px;
+.navicon::after {
+  transform: translateY(7px);
 }
 
-/* menu btn */
-
-.header .menu-btn {
-  display: none;
+.menu-button-open .navicon {
+  background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu {
-  max-height: 486px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent !important;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.menu-button-open .navicon::before {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
+.menu-button-open .navicon::after {
+  transform: rotate(-45deg);
 }
 
-/* 48em = 768px */
-
-@media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header .menu {
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
+.header .menu {
+  position: absolute;
+  z-index: 1000;
+  top: calc(100% + 8px);
+  right: 20px;
+  width: min(320px, calc(100vw - 32px));
+  max-height: min(70vh, 480px);
+  border: 1px solid $lightBorder1;
+  border-radius: 12px;
+  background-color: $lightBackground1;
+  box-shadow: $lightBoxShadowDark 0 10px 30px -10px;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out,
+    visibility 0.2s ease-out;
 }
-@media (max-width: 960px) and (min-width: 768px) {
-  .header {
-    font-size: 12px;
-  }
+
+.header.dark-menu .menu {
+  background-color: $darkBackground;
+}
+
+.header .menu-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.header .menu ul {
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+}
+
+.header .menu a {
+  display: block;
+  padding: 13px 16px;
+  border-radius: 8px;
+  color: $textColor;
+  text-decoration: none;
+}
+
+.header.dark-menu .menu a {
+  color: $textColorDark;
+}
+
+.header .menu a:hover {
+  background-color: $headerHoverBG;
+}
+
+.header.dark-menu .menu a:hover {
+  background-color: $buttonColor;
 }
 
 @media (max-width: 768px) {
   .header {
-    padding: 0.5rem 1rem;
-    gap: 0.5rem;
-
+    min-height: 64px;
+    padding: 8px 16px;
   }
 
-  .logo {
+  .header .logo {
     font-size: 1rem;
-    padding: 0.2rem 0.4rem;
   }
 
-  .logo-name {
+  .header .logo-name {
+    padding: 0 6px;
     font-size: 1.2rem;
   }
 
-  .menu-icon {
-    font-size: 1.6rem; // make sure it's not oversized
+  .header-actions {
+    gap: 10px;
+    margin-left: 10px;
+  }
+
+  .header .menu {
+    right: 16px;
   }
 }
 
+@media (max-width: 420px) {
+  .header .logo-name {
+    font-size: 1rem;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header .menu,
+  .navicon,
+  .navicon::before,
+  .navicon::after {
+    transition: none;
+  }
+}
