@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
-import { greeting } from "../../portfolio";
+import {greeting} from "../../portfolio";
 
 function Header() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
 
   const closeMenu = () => {
     document.getElementById("menu-btn").checked = false;
@@ -25,29 +25,46 @@ function Header() {
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{ color: "white" }}
+          style={{color: "white"}}
         >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
 
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           <li>
-            <a href="#greeting" onClick={closeMenu}>Hello World</a>
+            <a href="#greeting" onClick={closeMenu}>
+              Hello World
+            </a>
           </li>
           <li>
-            <a href="#skills" onClick={closeMenu}>Tech I use</a>
+            <a href="#skills" onClick={closeMenu}>
+              Tech I use
+            </a>
           </li>
           <li>
-            <a href="#education" onClick={closeMenu}>Where I'm growing?</a>
+            <a href="#professional-experience" onClick={closeMenu}>
+              Professional Experience
+            </a>
           </li>
           <li>
-            <a href="#projects" onClick={closeMenu}>Things I've Built</a>
+            <a href="#education" onClick={closeMenu}>
+              Education
+            </a>
           </li>
           <li>
-            <a href="#contact" onClick={closeMenu}>Let's Connect</a>
+            <a href="#projects" onClick={closeMenu}>
+              Things I've Built
+            </a>
           </li>
           <li>
-            <a><ToggleSwitch /></a>
+            <a href="#contact" onClick={closeMenu}>
+              Let's Connect
+            </a>
+          </li>
+          <li>
+            <a>
+              <ToggleSwitch />
+            </a>
           </li>
         </ul>
       </header>

@@ -213,14 +213,6 @@ const bigProjects = {
         { name: "GitHub", url: "https://github.com/HusseinMatar/magic-number-calculator" },
         { name: "Live Demo", url: "https://husseinmatar.github.io/magic-number-calculator/" }
       ]
-    },
-    {
-      projectName: "Business Card 💼",
-      projectDesc: "A modern digital business card with animated effects and minimalistic design, built with HTML, CSS, and JS.",
-      footerLink: [
-        { name: "GitHub", url: "https://github.com/HusseinMatar/Business-Card" },
-        { name: "Live Demo", url: "https://husseinmatar.github.io/Business-Card/" }
-      ]
     }
   ],
   display: true

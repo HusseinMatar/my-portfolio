@@ -12,7 +12,7 @@ export default function Experience() {
   }
 
   return (
-    <section className="experience-section" id="experience">
+    <section className="experience-section" id="professional-experience">
       <h1
         className={`experience-heading ${
           isDark ? "dark-mode-text" : "light-mode-text"

@@ -16,7 +16,7 @@ export default function Education() {
             isDark ? "dark-mode-text" : "light-mode-text"
           }`}
         >
-          Where I'm Growing?
+          Education
         </h1>
         <div className="education-card-container">
           {educationInfo.schools.map(school => {
