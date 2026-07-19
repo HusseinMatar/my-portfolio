@@ -16,6 +16,10 @@ const navigationItems = [
   {label: "Tech I Use", href: "#skills"},
   {label: "Professional Experience", href: "#professional-experience"},
   {label: "Education", href: "#education"},
+  {
+    label: "Leadership & Global Engagement",
+    href: "#leadership-global-engagement"
+  },
   {label: "Things I’ve Built", href: "#projects"},
   {label: "Let’s Connect", href: "#contact"}
 ];

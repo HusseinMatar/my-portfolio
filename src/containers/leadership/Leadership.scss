@@ -1,0 +1,72 @@
+@import "../../_globalColor";
+
+.leadership-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 6rem auto 4rem;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-margin-top: 110px;
+}
+
+.leadership-heading {
+  width: 100%;
+  margin: 0 0 24px;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+
+.leadership-intro {
+  max-width: 1000px;
+  margin: 0 0 42px;
+  color: inherit;
+  font-size: 17px;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.leadership-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.leadership-cards-container > * {
+  min-width: 0;
+}
+
+@media (max-width: 1024px) {
+  .leadership-heading {
+    font-size: 42px;
+  }
+
+  .leadership-cards-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .leadership-section {
+    margin-top: 4rem;
+    padding: 0 20px;
+  }
+
+  .leadership-heading {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+
+  .leadership-intro {
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .leadership-cards-container {
+    grid-template-columns: 1fr;
+  }
+}

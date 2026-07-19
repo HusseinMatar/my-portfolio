@@ -110,6 +110,57 @@ const educationInfo = {
   ]
 };
 
+const leadershipInfo = {
+  display: true,
+  title: "Leadership & Global Engagement",
+  intro:
+    "Beyond software development, I actively engage in international public policy and youth leadership initiatives. Through competitive delegate programs across Europe, I collaborate with policymakers, researchers, entrepreneurs, and young leaders to discuss technology, innovation, democracy, sustainability, and international cooperation. These experiences have strengthened my leadership, public speaking, cross-cultural communication, and policy analysis skills while allowing me to represent Lebanon on international platforms.",
+  engagements: [
+    {
+      flag: "🇩🇪",
+      country: "Germany",
+      location: "Berlin, Germany",
+      date: "May 2026",
+      organization: "Center for Global Dialogue and Cooperation (CGDL)",
+      role: "Partially Funded Delegate",
+      details: [
+        "Selected through a competitive international application process.",
+        "Participated in discussions on leadership, innovation, and global cooperation.",
+        "Collaborated with delegates from multiple countries on international challenges.",
+        "Expanded my understanding of European institutions and public policy."
+      ]
+    },
+    {
+      flag: "🇧🇪",
+      country: "Belgium",
+      location: "Brussels, Belgium",
+      date: "June 2026",
+      organization: "Humanitarian International Services Association (HISA)",
+      role: "Fully Funded Delegate representing Lebanon",
+      details: [
+        "Selected as a fully funded delegate representing Lebanon.",
+        "Participated in leadership and democracy programs within the European institutional ecosystem.",
+        "Visited the European Parliament, European Commission, Council of the European Union, and Parlamentarium.",
+        "Engaged in discussions on democracy, digital transformation, sustainability, and youth participation."
+      ]
+    },
+    {
+      flag: "🇦🇱",
+      country: "Albania",
+      location: "Tirana, Albania",
+      date: "August 2026",
+      organization: "Future Leaders Assembly — Ecovay",
+      role: "Fully Funded Delegate representing Lebanon",
+      details: [
+        "Selected to represent Lebanon among emerging leaders from around the world.",
+        "Participated in international dialogue on sustainable development, technology, entrepreneurship, and public policy.",
+        "Collaborated on ideas and solutions aligned with the United Nations Sustainable Development Goals.",
+        "Strengthened international networking and cross-cultural leadership skills."
+      ]
+    }
+  ]
+};
+
 const bigProjects = {
   title: "Things I've Built",
   subtitle: "Personal projects showcasing my development skills since the beginning of my journey. They differ in complexity and technologies used, but all reflect my passion for coding and problem-solving.",
@@ -239,6 +290,7 @@ export {
   skillsSection,
   experienceInfo,
   educationInfo,
+  leadershipInfo,
   bigProjects,
   contactInfo,
   resumeSection

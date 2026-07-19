@@ -64,6 +64,7 @@ describe("Header", () => {
       "#skills",
       "#professional-experience",
       "#education",
+      "#leadership-global-engagement",
       "#projects",
       "#contact"
     ]);

@@ -1,0 +1,90 @@
+@import "../../_globalColor";
+
+.leadership-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  padding: 26px;
+  border: 1px solid $lightBorder1;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: $textColor;
+  background-color: $lightBackground1;
+  box-shadow: $lightBoxShadowDark 0 10px 30px -15px;
+  overflow-wrap: anywhere;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.leadership-card-dark {
+  color: $textColorDark;
+  background-color: $darkBackground;
+}
+
+.leadership-card:hover {
+  transform: translateY(-6px);
+  box-shadow: $lightBoxShadowDark 0 20px 30px -12px;
+}
+
+.leadership-card-location-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.leadership-card-flag {
+  flex: 0 0 auto;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.leadership-card-location {
+  margin: 0;
+  color: inherit;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.leadership-card-date {
+  margin: 5px 0 0;
+  color: $subTitle;
+  font-size: 15px;
+}
+
+.leadership-card-organization {
+  margin: 24px 0 0;
+  color: inherit;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.leadership-card-role {
+  margin: 10px 0 0;
+  color: $buttonColor;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.leadership-card-details {
+  margin: 20px 0 0;
+  padding-left: 1.25rem;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.leadership-card-details li + li {
+  margin-top: 9px;
+}
+
+@media (max-width: 768px) {
+  .leadership-card {
+    padding: 22px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .leadership-card {
+    transition: none;
+  }
+}
