@@ -38,12 +38,20 @@ describe("Leadership", () => {
     expect(container.querySelectorAll(".leadership-card")).toHaveLength(3);
     expect(
       container.querySelectorAll(".leadership-card-details li")
-    ).toHaveLength(12);
+    ).toHaveLength(15);
     expect(container.textContent).toContain("Berlin, Germany");
     expect(container.textContent).toContain("Brussels, Belgium");
     expect(container.textContent).toContain("Tirana, Albania");
+    expect(container.textContent).toContain("Youth Development Forum 2026");
     expect(container.textContent).toContain(
-      "Beyond software development, I actively engage"
+      "Leadership Conference on Global Development 2026"
+    );
+    expect(container.textContent).toContain("Future Leaders Assembly 2026");
+    expect(container.textContent).toContain(
+      "Headway Institute of Strategic Alliance (HISA)"
+    );
+    expect(container.textContent).toContain(
+      "Beyond software development, I take part"
     );
   });
 

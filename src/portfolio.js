@@ -114,48 +114,54 @@ const leadershipInfo = {
   display: true,
   title: "Leadership & Global Engagement",
   intro:
-    "Beyond software development, I actively engage in international public policy and youth leadership initiatives. Through competitive delegate programs across Europe, I collaborate with policymakers, researchers, entrepreneurs, and young leaders to discuss technology, innovation, democracy, sustainability, and international cooperation. These experiences have strengthened my leadership, public speaking, cross-cultural communication, and policy analysis skills while allowing me to represent Lebanon on international platforms.",
+    "Beyond software development, I take part in international youth leadership, public policy, and cross-cultural dialogue programmes across Europe. These experiences allow me to engage with emerging leaders from different backgrounds, explore global challenges, and strengthen my communication, public speaking, collaboration, and international perspective while representing Lebanon.",
   engagements: [
     {
       flag: "🇩🇪",
       country: "Germany",
       location: "Berlin, Germany",
-      date: "May 2026",
+      date: "7–10 May 2026",
+      programme: "Youth Development Forum 2026",
       organization: "Center for Global Dialogue and Cooperation (CGDL)",
       role: "Partially Funded Delegate",
       details: [
-        "Selected through a competitive international application process.",
-        "Participated in discussions on leadership, innovation, and global cooperation.",
-        "Collaborated with delegates from multiple countries on international challenges.",
-        "Expanded my understanding of European institutions and public policy."
+        "Selected as a partially funded delegate for an international forum bringing together participants from 70 countries.",
+        "Participated in sessions on ethical leadership, political responsibility, mental health and resilience, climate action, and sustainable development.",
+        "Contributed to intercultural dialogue, youth delegate activities, networking sessions, and collaborative discussions.",
+        "Visited Berlin landmarks of historical and political significance, including the Reichstag Building, Brandenburg Gate, Berlin Wall Memorial, and Checkpoint Charlie.",
+        "Strengthened my public speaking, cross-cultural communication, leadership, and understanding of global challenges."
       ]
     },
     {
       flag: "🇧🇪",
       country: "Belgium",
       location: "Brussels, Belgium",
-      date: "June 2026",
-      organization: "Humanitarian International Services Association (HISA)",
+      date: "15–18 June 2026",
+      programme: "Leadership Conference on Global Development 2026",
+      organization: "Headway Institute of Strategic Alliance (HISA)",
       role: "Fully Funded Delegate representing Lebanon",
       details: [
-        "Selected as a fully funded delegate representing Lebanon.",
-        "Participated in leadership and democracy programs within the European institutional ecosystem.",
+        "Selected as a fully funded delegate representing Lebanon in an international leadership programme.",
+        "Participated in discussions and activities focused on leadership, democracy, international cooperation, and global development.",
         "Visited the European Parliament, European Commission, Council of the European Union, and Parlamentarium.",
-        "Engaged in discussions on democracy, digital transformation, sustainability, and youth participation."
+        "Engaged with delegates from different countries and developed a deeper understanding of European institutions and decision-making.",
+        "Strengthened my international network, public speaking, intercultural communication, and leadership skills."
       ]
     },
     {
       flag: "🇦🇱",
       country: "Albania",
       location: "Tirana, Albania",
-      date: "August 2026",
-      organization: "Future Leaders Assembly — Ecovay",
+      date: "27–30 August 2026",
+      programme: "Future Leaders Assembly 2026",
+      organization: "Ecovay",
       role: "Fully Funded Delegate representing Lebanon",
       details: [
-        "Selected to represent Lebanon among emerging leaders from around the world.",
-        "Participated in international dialogue on sustainable development, technology, entrepreneurship, and public policy.",
-        "Collaborated on ideas and solutions aligned with the United Nations Sustainable Development Goals.",
-        "Strengthened international networking and cross-cultural leadership skills."
+        "Selected as a fully funded delegate to represent Lebanon among 150 participants from more than 50 countries.",
+        "Participated in leadership workshops, expert-led panels, innovation labs, policy dialogues, and cross-cultural activities.",
+        "Collaborated with international delegates on ideas addressing sustainability, governance, social impact, innovation, and global challenges.",
+        "Took part in team challenges, project activities, networking sessions, and cultural exchange.",
+        "Strengthened practical leadership skills and built international connections supporting future community-impact initiatives."
       ]
     }
   ]

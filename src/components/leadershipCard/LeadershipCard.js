@@ -32,9 +32,18 @@ export default function LeadershipCard({engagement, isDark}) {
         </div>
       </div>
 
-      {engagement.organization && (
+      {(engagement.programme || engagement.organization) && (
         <h3 className="leadership-card-organization">
-          {engagement.organization}
+          {engagement.programme && (
+            <span className="leadership-card-programme">
+              {engagement.programme}
+            </span>
+          )}
+          {engagement.organization && (
+            <span className="leadership-card-organization-name">
+              {engagement.organization}
+            </span>
+          )}
         </h3>
       )}
       {engagement.role && (

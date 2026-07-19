@@ -61,6 +61,15 @@
   text-align: center;
 }
 
+.leadership-card-programme,
+.leadership-card-organization-name {
+  display: block;
+}
+
+.leadership-card-programme + .leadership-card-organization-name {
+  margin-top: 8px;
+}
+
 .leadership-card-role {
   margin: 10px 0 0;
   color: $buttonColor;
