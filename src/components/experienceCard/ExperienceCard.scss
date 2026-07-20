@@ -2,18 +2,18 @@
 
 .experience-card {
   position: relative;
-  background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  background-color: $surfaceElevatedLight;
+  box-shadow: 0 10px 30px -15px $shadowLight;
   border-radius: 10px;
-  border: 1px solid $lightBorder1;
+  border: 1px solid $cardBorderLight;
 }
 
 .experience-card-dark {
   position: relative;
-  background-color: $darkBackground;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  background-color: $surfaceElevatedDark;
+  box-shadow: 0 10px 30px -15px $shadowDark;
   border-radius: 10px;
-  border: 1px solid $lightBorder1;
+  border: 1px solid $cardBorderDark;
 }
 
 .experience-card:hover {

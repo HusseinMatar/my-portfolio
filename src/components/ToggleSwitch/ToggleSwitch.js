@@ -1,11 +1,10 @@
-import React, {useState, useContext} from "react";
+import React, {useContext} from "react";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
 import "./ToggleSwitch.scss";
 
 const ToggleSwitch = () => {
   const {isDark} = useContext(StyleContext);
-  const [isChecked, setChecked] = useState(isDark);
   const styleContext = useContext(StyleContext);
 
   return (
@@ -14,13 +13,10 @@ const ToggleSwitch = () => {
         type="checkbox"
         aria-label="Toggle color theme"
         checked={isDark}
-        onChange={() => {
-          styleContext.changeTheme();
-          setChecked(!isChecked);
-        }}
+        onChange={styleContext.changeTheme}
       />
       <span className="slider round">
-        <span className="emoji">{isChecked ? emoji("🌜") : emoji("☀️")}</span>
+        <span className="emoji">{isDark ? emoji("🌜") : emoji("☀️")}</span>
       </span>
     </label>
   );

@@ -12,10 +12,6 @@
   overflow-x: hidden;
 }
 
-.section-container#education {
-  scroll-margin-top: 110px;
-}
-
 .education-heading {
   font-size: 56px;
   font-weight: 500;
@@ -36,13 +32,14 @@
 .education-card {
   border-radius: 16px;
   padding: 30px 25px;
-  background-color: #1e1e2f;
+  background-color: $cardBackground;
+  border: 1px solid $cardBorderDark;
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
   gap: 24px;
   color: white;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 24px $shadowDark;
   width: 100%;
   box-sizing: border-box;
 }
@@ -203,5 +200,5 @@
 }
 
 .light-mode-text {
-  color: #1a1a1a;
+  color: $textPrimaryLight;
 }

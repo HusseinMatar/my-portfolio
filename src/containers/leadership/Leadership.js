@@ -13,7 +13,7 @@ export default function Leadership() {
 
   return (
     <section
-      className="leadership-section"
+      className="leadership-section section-anchor"
       id="leadership-global-engagement"
       aria-labelledby="leadership-heading"
     >

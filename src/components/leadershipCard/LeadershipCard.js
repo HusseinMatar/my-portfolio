@@ -26,25 +26,19 @@ export default function LeadershipCard({engagement, isDark}) {
           <h2 id={headingId} className="leadership-card-location">
             {engagement.location}
           </h2>
-          {engagement.date && (
-            <p className="leadership-card-date">{engagement.date}</p>
-          )}
         </div>
       </div>
 
-      {(engagement.programme || engagement.organization) && (
-        <h3 className="leadership-card-organization">
-          {engagement.programme && (
-            <span className="leadership-card-programme">
-              {engagement.programme}
-            </span>
-          )}
-          {engagement.organization && (
-            <span className="leadership-card-organization-name">
-              {engagement.organization}
-            </span>
-          )}
-        </h3>
+      {engagement.programme && (
+        <h3 className="leadership-card-programme">{engagement.programme}</h3>
+      )}
+      {engagement.date && (
+        <p className="leadership-card-date">{engagement.date}</p>
+      )}
+      {engagement.organization && (
+        <p className="leadership-card-organization">
+          {engagement.organization}
+        </p>
       )}
       {engagement.role && (
         <p className="leadership-card-role">{engagement.role}</p>

@@ -1,11 +1,5 @@
 @import "../../_globalColor";
 
-.main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 4rem;
-}
 .greet-main {
   width: 90%;
   padding: 20px 10px;
@@ -128,19 +122,12 @@
     align-items: center;
     gap: 10px; /* spacing between buttons */
   }
-  
+
   .button-greeting-div .button,
   .button-greeting-div .download-link-button {
     padding: 10px 18px;
     font-size: 13px;
     width: fit-content;
-  }
-  
-}
-
-@media (max-width: 320px) {
-  .main {
-    width: auto;
   }
 }
 

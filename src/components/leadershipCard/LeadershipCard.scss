@@ -6,24 +6,24 @@
   min-width: 0;
   height: 100%;
   padding: 26px;
-  border: 1px solid $lightBorder1;
+  border: 1px solid $cardBorderDark;
   border-radius: 16px;
   box-sizing: border-box;
-  color: $textColor;
-  background-color: $lightBackground1;
-  box-shadow: $lightBoxShadowDark 0 10px 30px -15px;
+  color: $textColorDark;
+  background-color: $portfolioCardBackground;
+  box-shadow: 0 10px 30px -15px $shadowDark;
   overflow-wrap: anywhere;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .leadership-card-dark {
   color: $textColorDark;
-  background-color: $darkBackground;
+  background-color: $portfolioCardBackground;
 }
 
 .leadership-card:hover {
   transform: translateY(-6px);
-  box-shadow: $lightBoxShadowDark 0 20px 30px -12px;
+  box-shadow: 0 20px 30px -12px $shadowDark;
 }
 
 .leadership-card-location-row {
@@ -48,49 +48,39 @@
 }
 
 .leadership-card-date {
-  display: inline-block;
+  align-self: center;
   margin: 8px 0 0;
-  padding: 4px 10px;
-  border: 1px solid $lightBorder1;
-  border-radius: 999px;
-  color: $subTitle;
-  font-size: 15px;
+  color: $textSecondaryDark;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
 }
 
-.leadership-card-organization {
+.leadership-card-programme {
   margin: 24px 0 0;
   color: inherit;
   font-size: 18px;
+  font-weight: 700;
   line-height: 1.45;
   text-align: center;
 }
 
-.leadership-card-programme,
-.leadership-card-organization-name {
-  display: block;
-}
-
-.leadership-card-programme {
-  font-weight: 700;
-}
-
-.leadership-card-organization-name {
-  color: $subTitle;
+.leadership-card-organization {
+  margin: 8px 0 0;
+  color: $textSecondaryDark;
   font-size: 14px;
   font-weight: 400;
-}
-
-.leadership-card-programme + .leadership-card-organization-name {
-  margin-top: 8px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .leadership-card-role {
   align-self: center;
   margin: 14px 0 0;
   padding: 6px 12px;
-  border: 1px solid $buttonColor;
+  border: 1px solid $educationCardBorder;
   border-radius: 999px;
-  color: $buttonColor;
+  color: $educationCardBorder;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.5;

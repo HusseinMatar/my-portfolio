@@ -76,4 +76,20 @@ describe("Leadership", () => {
     expect(container.querySelector(".leadership-card-role")).toBeNull();
     expect(container.querySelector(".leadership-card-details")).toBeNull();
   });
+
+  it("renders card metadata in the intended visual order", () => {
+    renderWithTheme(<Leadership />);
+
+    const card = container.querySelector(".leadership-card");
+    const classes = Array.from(card.children).map(child => child.className);
+
+    expect(classes).toEqual([
+      "leadership-card-location-row",
+      "leadership-card-programme",
+      "leadership-card-date",
+      "leadership-card-organization",
+      "leadership-card-role",
+      "leadership-card-details"
+    ]);
+  });
 });

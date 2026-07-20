@@ -12,7 +12,10 @@ export default function Experience() {
   }
 
   return (
-    <section className="experience-section" id="professional-experience">
+    <section
+      className="experience-section section-anchor"
+      id="professional-experience"
+    >
       <h1
         className={`experience-heading ${
           isDark ? "dark-mode-text" : "light-mode-text"

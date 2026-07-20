@@ -1,8 +1,8 @@
 @import "../../_globalColor";
 
 .main-button {
-  background-color: $buttonColor;
-  border: solid 1px $buttonColor;
+  background-color: $accentPrimary;
+  border: solid 1px $accentPrimary;
   color: $textColorDark;
   font-weight: 700;
   width: max-content;
@@ -16,13 +16,17 @@
   margin-top: 20px;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.3s ease-in-out 0s;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, transform 0.2s ease;
 }
 .main-button:hover {
-  background-color: $darkBoxShadow2;
-  color: $buttonColor;
-  transition: all 0.3s ease 0s;
+  background-color: $surfaceElevatedLight;
+  color: $accentPrimary;
   transform: translateY(-3px);
+}
+.main-button:focus-visible {
+  outline: 3px solid $focusRing;
+  outline-offset: 3px;
 }
 .project-button {
   display: flex;

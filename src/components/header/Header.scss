@@ -5,7 +5,7 @@
 }
 
 .dark-menu {
-  background-color: $darkBackground !important;
+  background-color: $surfacePrimaryDark !important;
   color: $textColorDark;
 }
 
@@ -20,11 +20,16 @@
   margin: 0 auto;
   padding: 12px 20px;
   box-sizing: border-box;
-  background-color: $lightBackground1;
+  border-bottom: 1px solid $cardBorderLight;
+  background-color: $surfacePrimaryLight;
 }
 
 .grey-color {
   color: $subTitle;
+}
+
+.dark-menu .grey-color {
+  color: $textSecondaryDark;
 }
 
 .header .logo {
@@ -67,7 +72,7 @@
 }
 
 .header-theme-toggle .switch input:focus-visible + .slider {
-  outline: 3px solid $buttonColor;
+  outline: 3px solid $focusRing;
   outline-offset: 3px;
 }
 
@@ -90,6 +95,10 @@
   color: $textColorDark;
 }
 
+.dark-menu .menu-button:hover {
+  background-color: $accentPrimary;
+}
+
 .menu-button:hover {
   background-color: $headerHoverBG;
 }
@@ -97,7 +106,7 @@
 .menu-button:focus-visible,
 .header .menu a:focus-visible,
 .header .logo:focus-visible {
-  outline: 3px solid $buttonColor;
+  outline: 3px solid $focusRing;
   outline-offset: 3px;
 }
 
@@ -150,10 +159,10 @@
   right: 20px;
   width: min(320px, calc(100vw - 32px));
   max-height: min(70vh, 480px);
-  border: 1px solid $lightBorder1;
+  border: 1px solid $cardBorderLight;
   border-radius: 12px;
-  background-color: $lightBackground1;
-  box-shadow: $lightBoxShadowDark 0 10px 30px -10px;
+  background-color: $surfaceElevatedLight;
+  box-shadow: 0 10px 30px -10px $shadowLight;
   overflow-y: auto;
   opacity: 0;
   visibility: hidden;
@@ -164,7 +173,9 @@
 }
 
 .header.dark-menu .menu {
-  background-color: $darkBackground;
+  border-color: $cardBorderDark;
+  background-color: $surfaceElevatedDark;
+  box-shadow: 0 10px 30px -10px $shadowDark;
 }
 
 .header .menu-open {
@@ -197,7 +208,7 @@
 }
 
 .header.dark-menu .menu a:hover {
-  background-color: $buttonColor;
+  background-color: $accentPrimary;
 }
 
 @media (max-width: 768px) {

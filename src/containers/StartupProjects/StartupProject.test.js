@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {act} from "react-dom/test-utils";
+import {act, Simulate} from "react-dom/test-utils";
 import StartupProject from "./StartupProject";
 import {StyleProvider} from "../../contexts/StyleContext";
 import {bigProjects} from "../../portfolio";
@@ -43,5 +43,57 @@ describe("StartupProject", () => {
 
     expect(cards).toHaveLength(bigProjects.projects.length);
     expect(Math.max(...delays)).toBeLessThanOrEqual(1200);
+  });
+
+  it("toggles a project with click or touch-style activation", () => {
+    const toggle = container.querySelector(".flip-card-toggle");
+    const card = container.querySelector(".flip-card");
+
+    act(() => Simulate.click(toggle));
+    expect(card.classList.contains("flip-card-open")).toBe(true);
+    expect(toggle.getAttribute("aria-expanded")).toBe("true");
+
+    act(() => Simulate.click(toggle));
+    expect(card.classList.contains("flip-card-open")).toBe(false);
+  });
+
+  it.each(["Enter", " "])("toggles a focused project with %p", key => {
+    const toggle = container.querySelector(".flip-card-toggle");
+    const card = container.querySelector(".flip-card");
+
+    act(() => Simulate.keyDown(toggle, {key}));
+    expect(card.classList.contains("flip-card-open")).toBe(true);
+  });
+
+  it("closes an open project with Escape", () => {
+    const toggle = container.querySelector(".flip-card-toggle");
+    const card = container.querySelector(".flip-card");
+
+    act(() => Simulate.click(toggle));
+    act(() => Simulate.keyDown(card, {key: "Escape"}));
+
+    expect(card.classList.contains("flip-card-open")).toBe(false);
+    expect(document.activeElement).toBe(toggle);
+  });
+
+  it("keeps reverse-side links independently actionable", () => {
+    const toggle = container.querySelector(".flip-card-toggle");
+
+    act(() => Simulate.click(toggle));
+    const link = container.querySelector(".project-button");
+    act(() => Simulate.click(link));
+
+    expect(link.getAttribute("tabindex")).toBe("0");
+    expect(
+      link.closest(".flip-card").classList.contains("flip-card-open")
+    ).toBe(true);
+  });
+
+  it("uses the shared anchor and project-scoped layout classes", () => {
+    expect(
+      container.querySelector("#projects.section-container")
+    ).not.toBeNull();
+    expect(container.querySelector(".startup-projects-main")).not.toBeNull();
+    expect(container.querySelector("#projects .main")).toBeNull();
   });
 });

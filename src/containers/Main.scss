@@ -2,11 +2,23 @@
 
 .dark-mode {
   background-color: $darkBackground;
-  color: white;
-  transition: "0.1s";
+  color: $textPrimaryDark;
 }
 
-html, body {
+.app-theme {
+  min-height: 100vh;
+  background-color: $pageBackgroundLight;
+  color: $textPrimaryLight;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.app-theme.dark-mode {
+  background-color: $pageBackgroundDark;
+  color: $textPrimaryDark;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -27,13 +39,43 @@ body > div:last-child {
 /* Add to Main.scss or your global layout file */
 .section-container {
   scroll-snap-align: none;
+  scroll-margin-top: 110px;
   height: auto;
   overflow: visible;
 }
 
+.section-anchor {
+  scroll-margin-top: 110px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body {
+    scroll-behavior: auto;
+  }
+
+  .app-theme,
+  .react-reveal {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 .main {
+  width: 90%;
+  margin: 4rem auto 0;
+  padding: 20px 10px;
+  box-sizing: border-box;
   scroll-snap-type: none;
   overflow-y: visible;
   height: auto;
   flex: 1 0 auto;
+}
+
+@media (max-width: 320px) {
+  .main {
+    width: auto;
+  }
 }

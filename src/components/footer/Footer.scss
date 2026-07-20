@@ -2,11 +2,11 @@
 
 .footer-text {
   text-align: center;
-  color: $subTitle !important;
+  color: $textSecondaryLight;
 }
 
-.dark-mode {
-  color: $textColorDark !important;
+.footer-text-dark {
+  color: $textSecondaryDark;
 }
 
 .footer-div {

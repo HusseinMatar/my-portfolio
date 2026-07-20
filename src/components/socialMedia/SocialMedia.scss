@@ -28,6 +28,12 @@
   transition: 0.2s ease-in;
 }
 
+.icon-button:focus-visible {
+  outline: 3px solid $focusRing;
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+
 .facebook i {
   background-color: $faceBook;
 }
@@ -44,11 +50,9 @@
   background-color: $google;
 }
 
-
 .whatsapp i {
   background-color: $whatsapp;
 }
-
 
 /* Hover Transition */
 .twitter i:hover,
