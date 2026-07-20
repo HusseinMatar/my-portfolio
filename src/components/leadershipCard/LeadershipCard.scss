@@ -48,7 +48,11 @@
 }
 
 .leadership-card-date {
-  margin: 5px 0 0;
+  display: inline-block;
+  margin: 8px 0 0;
+  padding: 4px 10px;
+  border: 1px solid $lightBorder1;
+  border-radius: 999px;
   color: $subTitle;
   font-size: 15px;
 }
@@ -66,12 +70,26 @@
   display: block;
 }
 
+.leadership-card-programme {
+  font-weight: 700;
+}
+
+.leadership-card-organization-name {
+  color: $subTitle;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .leadership-card-programme + .leadership-card-organization-name {
   margin-top: 8px;
 }
 
 .leadership-card-role {
-  margin: 10px 0 0;
+  align-self: center;
+  margin: 14px 0 0;
+  padding: 6px 12px;
+  border: 1px solid $buttonColor;
+  border-radius: 999px;
   color: $buttonColor;
   font-size: 15px;
   font-weight: 700;

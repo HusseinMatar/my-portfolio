@@ -38,7 +38,7 @@ describe("Leadership", () => {
     expect(container.querySelectorAll(".leadership-card")).toHaveLength(3);
     expect(
       container.querySelectorAll(".leadership-card-details li")
-    ).toHaveLength(15);
+    ).toHaveLength(12);
     expect(container.textContent).toContain("Berlin, Germany");
     expect(container.textContent).toContain("Brussels, Belgium");
     expect(container.textContent).toContain("Tirana, Albania");
@@ -49,6 +49,10 @@ describe("Leadership", () => {
     expect(container.textContent).toContain("Future Leaders Assembly 2026");
     expect(container.textContent).toContain(
       "Headway Institute of Strategic Alliance (HISA)"
+    );
+    expect(container.textContent).not.toContain("representing Lebanon");
+    expect(container.textContent).not.toContain(
+      "Selected as a fully funded delegate"
     );
     expect(container.textContent).toContain(
       "Beyond software development, I take part"

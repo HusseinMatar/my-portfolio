@@ -114,7 +114,7 @@ const leadershipInfo = {
   display: true,
   title: "Leadership & Global Engagement",
   intro:
-    "Beyond software development, I take part in international youth leadership, public policy, and cross-cultural dialogue programmes across Europe. These experiences allow me to engage with emerging leaders from different backgrounds, explore global challenges, and strengthen my communication, public speaking, collaboration, and international perspective while representing Lebanon.",
+    "Beyond software development, I take part in international youth leadership, public policy, and cross-cultural dialogue programmes across Europe. These experiences have allowed me to represent Lebanon, engage with emerging leaders from diverse backgrounds, explore global challenges, and strengthen my communication, public speaking, collaboration, and international perspective.",
   engagements: [
     {
       flag: "🇩🇪",
@@ -125,7 +125,6 @@ const leadershipInfo = {
       organization: "Center for Global Dialogue and Cooperation (CGDL)",
       role: "Partially Funded Delegate",
       details: [
-        "Selected as a partially funded delegate for an international forum bringing together participants from 70 countries.",
         "Participated in sessions on ethical leadership, political responsibility, mental health and resilience, climate action, and sustainable development.",
         "Contributed to intercultural dialogue, youth delegate activities, networking sessions, and collaborative discussions.",
         "Visited Berlin landmarks of historical and political significance, including the Reichstag Building, Brandenburg Gate, Berlin Wall Memorial, and Checkpoint Charlie.",
@@ -139,9 +138,8 @@ const leadershipInfo = {
       date: "15–18 June 2026",
       programme: "Leadership Conference on Global Development 2026",
       organization: "Headway Institute of Strategic Alliance (HISA)",
-      role: "Fully Funded Delegate representing Lebanon",
+      role: "Fully Funded Delegate",
       details: [
-        "Selected as a fully funded delegate representing Lebanon in an international leadership programme.",
         "Participated in discussions and activities focused on leadership, democracy, international cooperation, and global development.",
         "Visited the European Parliament, European Commission, Council of the European Union, and Parlamentarium.",
         "Engaged with delegates from different countries and developed a deeper understanding of European institutions and decision-making.",
@@ -155,9 +153,8 @@ const leadershipInfo = {
       date: "27–30 August 2026",
       programme: "Future Leaders Assembly 2026",
       organization: "Ecovay",
-      role: "Fully Funded Delegate representing Lebanon",
+      role: "Fully Funded Delegate",
       details: [
-        "Selected as a fully funded delegate to represent Lebanon among 150 participants from more than 50 countries.",
         "Participated in leadership workshops, expert-led panels, innovation labs, policy dialogues, and cross-cultural activities.",
         "Collaborated with international delegates on ideas addressing sustainability, governance, social impact, innovation, and global challenges.",
         "Took part in team challenges, project activities, networking sessions, and cultural exchange.",
@@ -169,7 +166,10 @@ const leadershipInfo = {
 
 const bigProjects = {
   title: "Things I've Built",
-  subtitle: "Personal projects showcasing my development skills since the beginning of my journey. They differ in complexity and technologies used, but all reflect my passion for coding and problem-solving.",
+  subtitle: [
+    "A selection of personal projects that demonstrate my growth as a developer, from early experiments to more structured applications.",
+    "Each project reflects practical experience with different technologies, problem-solving approaches, and product ideas."
+  ],
   projects: [
     {
       projectName: "Planet Live Dashboard 🌍",

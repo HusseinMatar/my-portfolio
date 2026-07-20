@@ -1,30 +1,46 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./StartupProjects.scss";
-import { bigProjects } from "../../portfolio";
+import {bigProjects} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
 
   if (!bigProjects.display) return null;
 
   return (
     <div className="section-container" id="projects">
       <div className="main">
-      <h1 className={`skills-heading ${isDark ? "dark-mode-text" : "light-mode-text"}`}>
-        {bigProjects.title}
-      </h1>
-      <p className={`project-subtitle ${isDark ? "dark-mode-subtitle" : "light-mode-subtitle"}`}>
-        {bigProjects.subtitle}
-      </p>
+        <h1
+          className={`skills-heading ${
+            isDark ? "dark-mode-text" : "light-mode-text"
+          }`}
+        >
+          {bigProjects.title}
+        </h1>
+        <div
+          className={`project-subtitle ${
+            isDark ? "dark-mode-subtitle" : "light-mode-subtitle"
+          }`}
+        >
+          {bigProjects.subtitle.map(line => (
+            <p className="project-subtitle-line" key={line}>
+              {line}
+            </p>
+          ))}
+        </div>
 
         <div className="flip-card-container">
           {bigProjects.projects.map((project, index) => (
-            <div className="flip-card" key={index}>
+            <div
+              className="flip-card"
+              key={index}
+              style={{animationDelay: `${Math.min(index, 12) * 100}ms`}}
+            >
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <h3 className="project-front-title">{project.projectName}</h3>
-                  <span className="flip-hint-mobile">↻</span> 
+                  <span className="flip-hint-mobile">↻</span>
                 </div>
                 <div className="flip-card-back">
                   <p className="project-description">{project.projectDesc}</p>
