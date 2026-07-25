@@ -217,58 +217,11 @@ const bigProjects = {
     ]
   },
     {
-      projectName: "FrecciaBus 🚌",
-      projectDesc: "A full-featured Angular app to search, book, and download bus tickets across Italy. Includes Firebase Auth & PDF ticket export.",
-      footerLink: [
-        { name: "Live Demo", url: "https://busapp-d73ac.web.app/search" }
-      ]
-    },
-    {
       projectName: "Michelin Magic Drops 🌿",
       projectDesc: "Sustainability-focused presentation site built for the Michelin Challenge.",
       footerLink: [
         { name: "GitHub", url: "https://github.com/HusseinMatar/MichelinMagicDrops" },
         { name: "Live Demo", url: "https://husseinmatar.github.io/MichelinMagicDrops/" }
-      ]
-    },
-    {
-      projectName: "OrbytaVision 🌌",
-      projectDesc: "A space-themed educational website exploring the solar system with smooth animations and immersive design.",
-      footerLink: [
-        { name: "GitHub", url: "https://github.com/HusseinMatar/OrbytaVision" },
-        { name: "Live Demo", url: "https://husseinmatar.github.io/OrbytaVision/" }
-      ]
-    },
-    {
-      projectName: "Run for Values 🎮",
-      projectDesc: "A vertical mini-game where you dodge falling trees and collect 5 core values to win.",
-      footerLink: [
-        { name: "GitHub", url: "https://github.com/HusseinMatar/run-for-values" },
-        { name: "Live Demo", url: "https://husseinmatar.github.io/run-for-values/" }
-      ]
-    },
-    {
-      projectName: "RPS Battle ⚔️",
-      projectDesc: "A fast-paced Rock-Paper-Scissors game with countdown pressure, animated battles, and local match history.",
-      footerLink: [
-        { name: "GitHub", url: "https://github.com/HusseinMatar/RPS-Battle" },
-        { name: "Live Demo", url: "https://husseinmatar.github.io/RPS-Battle/" }
-      ]
-    },
-        {
-      projectName: "Snake Game 🐍",
-      projectDesc: "A version of the classic Snake game with mobile controls, obstacles, and a timed super bonus that doubles your score and length.",
-      footerLink: [
-        { name: "GitHub", url: "https://github.com/HusseinMatar/snake" },
-        { name: "Live Demo", url: "https://husseinmatar.github.io/snake/" }
-      ]
-    },
-    {
-      projectName: "Your Magic Number Calculator 🔢",
-      projectDesc: "A simple and interactive Magic Number Calculator based on Numerology.",
-      footerLink: [
-        { name: "GitHub", url: "https://github.com/HusseinMatar/magic-number-calculator" },
-        { name: "Live Demo", url: "https://husseinmatar.github.io/magic-number-calculator/" }
       ]
     }
   ],
