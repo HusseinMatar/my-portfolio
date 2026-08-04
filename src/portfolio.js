@@ -175,7 +175,7 @@ const bigProjects = {
       projectName: "BeyConnect 🇱🇧",
       projectDesc:
         "Free platform connecting travelers with people who need to send small items to and from Lebanon.",
-      footerLink: [{name: "Live Demo", url: "https://lnkd.in/eddi5BPD"}]
+      footerLink: [{name: "Live Demo", url: "https://beyconnect2026.web.app/"}]
     },
     {
       projectName: "Planet Live Dashboard 🌍",
