@@ -172,6 +172,12 @@ const bigProjects = {
   ],
   projects: [
     {
+      projectName: "BeyConnect 🇱🇧",
+      projectDesc:
+        "Free platform connecting travelers with people who need to send small items to and from Lebanon.",
+      footerLink: [{name: "Live Demo", url: "https://lnkd.in/eddi5BPD"}]
+    },
+    {
       projectName: "Planet Live Dashboard 🌍",
       projectDesc: "Interactive real-time dashboard with a 3D globe showing earthquakes, ISS tracking, weather search, and near-Earth asteroid data.",
       footerLink: [
